@@ -109,20 +109,18 @@
 
 								<section>
 									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<p>About 200 million Internet-connected devices—some that may be controlling elevators, medical equipment, and other mission-critical systems—are vulnerable to attacks that give attackers complete control, researchers warned on Monday.</p>
+									<p>In all, researchers with security firm Armis identified 11 vulnerabilities in various versions of VxWorks, a slimmed-down operating system that runs on more than 2 billion devices worldwide (this section of Wikipedia's article on the OS lists some of its more notable uses). Billed collectively as Urgent 11, the vulnerabilities consist of six remote code flaws and five less-severe issues that allow things like information leaks and denial-of-service attacks. None of the vulnerabilities affects the most recent version of VxWorks—which was released last week—or any of the certified versions of the OS, including VxWorks 653 or VxWorks Cert Edition.</p>
+									<p>For the 200 million devices Armis estimated are running a version that’s susceptible to a serious attack, however, the stakes may be high. Because many of the vulnerabilities reside in the networking stack known as IPnet, they can often be exploited by little more than boobytrapped packets sent from the Internet. Depending on the vulnerability, exploits may also be able to penetrate firewalls and other types of network defenses. The most dire scenarios are attacks that chain together multiple exploits that trigger the remote takeover of multiple devices.</p>
+									<p>“Such vulnerabilities do not require any adaptations for the various devices using the network stack, making them exceptionally easy to spread,” Armis researchers wrote in a technical overview. “In most operating systems, such fundamental vulnerabilities in the crucial networking stacks have become extinct, after years of scrutiny unravelled and mitigated such flaws.”</p>
+									<p>In a post published Monday, Arlen Baker, chief security architect of VxWorks-maker Wind River, wrote:</p>
+									<blockquote>The IPnet networking stack is a component of some versions of VxWorks, including end-of-life (EOL) versions back to 6.5. Specifically, connected devices leveraging older standard VxWorks releases that include the IPnet stack are impacted by one or more of the discovered vulnerabilities. The latest release of VxWorks is not affected by the Urgent/11 vulnerability, nor are any of Wind River’s safety-critical products that are designed for safety certification, such as VxWorks 653 and VxWorks Cert Edition used in critical infrastructure.</blockquote>
+									<p>Baker said Wind River researchers believe the number of affected devices is lower than the 200 million estimate provided by Armis. Affected devices, he said, are primarily non-critical devices such as modems, routers, and printers, as well as some industrial and medical devices that reside at the perimeter of organizations’ networks and are exposed to the Internet.</p>
+									<p>Wind River issued patches last month and is in the process of notifying affected customers of the threat. The challenge for many of these customers will be locating the devices on their networks and taking them off-line so they can be updated. Often organizations rely on the devices to run continuously.</p>
+									<p>The more immediate challenge for organizations that use affected or potentially affected equipment will be to assess the risk they face. Armis researchers are presenting Urgent 11 as posing a serious and imminent threat, potentially at the scale of the Windows vulnerabilities that allowed the 2016 WannaCry worm to sow worldwide disruptions. Armis researchers are also warning that the difficulty of patching the flaws means this risk may be with us for the foreseeable future.</p>
+									<p>But the threat may very well be much smaller than that assessment. What’s more (assuming the threat is as bad as Armis says it is), it may be possible to mitigate the risk through means other than patching, such as access control lists, which restrict the devices that can connect to a vulnerable device. A better mitigation still is to remove a vulnerable device from the outside Internet altogether. Either way, people inside any organization using devices running VxWorks should make it a priority to do a deep dive on Urgent 11 so they can understand the risk it poses.</p>
 									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
 									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
 
 while (!deck.isInOrder()) {
     print 'Iteration ' + i;
